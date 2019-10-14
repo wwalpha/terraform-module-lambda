@@ -1,0 +1,21 @@
+{
+  "name": "terraform-modules-lambda",
+  "version": "1.0.0",
+  "description": "## Prerequisites",
+  "main": "index.js",
+  "scripts": {
+    "plan": "terraform plan -var-file test.tfvars",
+    "app": "terraform apply -var-file test.tfvars",
+    "destroy": "terraform destroy -var-file test.tfvars"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wwalpha/terraform-modules-lambda.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wwalpha/terraform-modules-lambda/issues"
+  },
+  "homepage": "https://github.com/wwalpha/terraform-modules-lambda#readme"
+}
