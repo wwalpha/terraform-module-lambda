@@ -149,6 +149,7 @@ resource "aws_lambda_permission" "others" {
   function_name = "${local.aws_lambda_function.function_name}"
   principal     = "${var.trigger_principal}"
   source_arn    = "${var.trigger_source_arn}"
+  qualifier     = "${var.alias_name}"
 
   count = "${local.enable_permission_others}"
 }
