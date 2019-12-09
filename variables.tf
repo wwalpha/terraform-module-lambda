@@ -70,8 +70,13 @@ variable "tags" {
 // ----------------------------------
 // Lambda File Upload Settings
 // ----------------------------------
-# filename - (Optional) The path to the function's deployment package within the local filesystem. If defined, The s3_-prefixed options cannot be used.
-variable "filename" {
+# local source dir
+variable "source_dir" {
+  default = null
+}
+
+# local build output path
+variable "source_output_path" {
   default = null
 }
 
